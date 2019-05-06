@@ -141,12 +141,6 @@ button:hover{
     padding: 20px;
 }
 
-.clearfix::after {
-    content:"";
-    clear: both;
-    display: table;
-}
-
 .label{
     background-color:inherit;
     width: 250px;
