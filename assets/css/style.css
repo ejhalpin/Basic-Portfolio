@@ -17,22 +17,31 @@ body {
     color: #777777;
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     background-image: url('../images/white-waves.png');
-    
 }
+
 a{
     text-decoration: none;
     color: inherit;
 }
+
 a.pad {
-   
     padding: 20px;
+}
+
+a:hover{
+    color: #9195ff;
 }
 
 span.label:hover{
     background-color:#9195ff;
 }
-a:hover{
-    color: #9195ff;
+
+a.image-link:hover{
+    background-color: #9195ff;
+}
+
+a.image-link{
+    background-color: #4aaaa5;
 }
 
 header {
@@ -79,6 +88,7 @@ footer {
     display: block;
     padding-top:15px;
 }
+
 #content {
     background-color: #ffffff;
     border:2px solid #dddddd;
@@ -121,6 +131,8 @@ button:hover{
 .img{
     width:280px;
     height:200px;
+    margin:0px 0px -3px 0px;
+    padding: 0px;
 }
 
 .box{
@@ -136,7 +148,7 @@ button:hover{
 }
 
 .label{
-    background-color: #4aaaa5;
+    background-color:inherit;
     width: 250px;
     text-align: center;
     display: block;
@@ -179,3 +191,4 @@ button {
     padding: 10px;
     width: 100px;
 }
+
