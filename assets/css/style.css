@@ -11,8 +11,12 @@ h2 {
     color: #4aaaa5;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
+html, body {
+    height: 100%;
+}
 body {
+    display: flex;
+    flex-direction: column;
     margin:0;
     color: #777777;
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -25,19 +29,19 @@ a{
 }
 
 a.pad {
-    padding: 20px;
+    padding-left: 40px;
 }
 
 a:hover{
-    color: #9195ff;
+    color: #48b873;
 }
 
 span.label:hover{
-    background-color:#9195ff;
+    background-color:#48b873;
 }
 
 a.image-link:hover{
-    background-color: #9195ff;
+    background-color: #48b873;
 }
 
 a.image-link{
@@ -72,37 +76,37 @@ header {
 }
 
 footer {
+    flex-shrink: 0;
     background-color: #666666;
     border-top: 8px solid #4aaaa5;
     text-align: center;
-    position: fixed;
-    bottom:0;
     z-index: 1;
     font-size: 0.7;
     width: 100%;
     left: 0;
-    height: 40px; 
+    
 }
 
 #footer_text {
     display: block;
-    padding-top:15px;
+    padding-top:20px;
+    padding-bottom: 5px;
 }
 
 #content {
+    flex: 1 0 auto;
     background-color: #ffffff;
     border:2px solid #dddddd;
-    width: 920px;
+    width: 916px;
     margin: auto;
-    margin-top: 108px;
-    margin-bottom: 50px;
-    padding: 20px 20px 20px 20px;
-    overflow: auto;
-    position: relative;
+    margin-top: 100px;
+    padding: 20px;
+    margin-bottom: 10px;
+    
 }
 
 button:hover{
-    background-color: #9195ff;
+    background-color: #48b873;
 }
 
 #picture_box {
@@ -163,16 +167,18 @@ button:hover{
 
 #input_name, #input_email{
     width: 100%;
-    font-family: Arial, 'Helvetica Neue' Helvetica, sans-serif;
-    color: #777777;
+    
+    
+    
 }
 
 #input_message{
     width: 100%;
     height: 200px;
     margin-bottom: 20px;
-    font-family: Arial, 'Helvetica Neue' Helvetica, sans-serif;
     color: #777777;
+    font-size: 14px;
+    
 }
 
 button {
@@ -185,4 +191,19 @@ button {
     padding: 10px;
     width: 100px;
 }
+input {
+    color: #777777;
+    font-family: Arial, 'Helvetica Neue' Helvetica, sans-serif;
+    font-size: 14px;
+}
 
+input:focus{
+    background-color: #4cc29a;
+    color: #ffffff;
+}
+
+textarea:focus{
+    outline: none;
+    border-color: #4cc29a;
+    
+}
