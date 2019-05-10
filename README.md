@@ -1,2 +1,1 @@
-# Basic-Portfolio
-the recommended assignment for HW 1
+# ejhalpin.github.io
